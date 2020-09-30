@@ -1,0 +1,40 @@
+### To Create student in table
+
+POST https://t35q0s5xsk.execute-api.us-east-1.amazonaws.com/dev/v1/student
+Content-Type: application/json
+# sample data 1
+{
+  "name": "Sunil",
+  "age": 25
+}
+##sample data 2
+
+#{
+#  "name": "Ajay",
+#  "age": 31
+#}
+
+##sample data 3
+
+#{
+#  "name": "Rakesh",
+#  "age": 20
+#}
+
+### To list all items in table
+GET https://t35q0s5xsk.execute-api.us-east-1.amazonaws.com/dev/v1/student
+
+### To get details of particular student from table by passing name as parameter
+#GET https://vm6jr2eakc.execute-api.us-east-1.amazonaws.com/dev/v1/student/{name}
+GET https://t35q0s5xsk.execute-api.us-east-1.amazonaws.com/dev/v1/student/Rakesh
+
+### To update age of particular student by passing age.
+PUT https://t35q0s5xsk.execute-api.us-east-1.amazonaws.com/dev/v1/student/Sunil
+Content-Type: application/json
+
+# sample data 1
+{
+  "age": 30
+}
+### To delete item in table
+DELETE https://t35q0s5xsk.execute-api.us-east-1.amazonaws.com/dev/v1/student/Ajay
