@@ -1,25 +1,27 @@
 ### To Create student in table
 
-POST https://t35q0s5xsk.execute-api.us-east-1.amazonaws.com/dev/v1/student
-Content-Type: application/json
-# sample data 1
-{
-  "name": "Sunil",
-  "age": 25
-}
-##sample data 2
+##sample data 1
 
 #{
 #  "name": "Ajay",
 #  "age": 31
 #}
 
-##sample data 3
+##sample data 2
 
 #{
 #  "name": "Rakesh",
 #  "age": 20
 #}
+
+POST https://t35q0s5xsk.execute-api.us-east-1.amazonaws.com/dev/v1/student
+Content-Type: application/json
+
+{
+  "name": "Sunil",
+  "age": 25
+}
+
 
 ### To list all items in table
 GET https://t35q0s5xsk.execute-api.us-east-1.amazonaws.com/dev/v1/student
